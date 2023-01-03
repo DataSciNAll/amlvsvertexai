@@ -1,9 +1,28 @@
 # Azure-ML-vs-GCP Vertex AI
 
 ## Overview
-In this tutorial, you will go through various ways of importing, transforming, analyzing, and exporting data with Vertex AI. This tutorial will walk you through Big Query and Vertex AI Consoles. 
+In this tutorial, you will go through various ways of importing, transforming, analyzing, and exporting data with Vertex AI. This tutorial will walk you through BigQuery and Vertex AI Consoles. Here is a good cheatsheet that outlines the options for data engineering and machine learning options in GCP.
 
-## Data Wrangler 
+[Data Engineering Cheat Sheet in GCP](https://github.com/ml874/Data-Engineering-on-GCP-Cheatsheet/blob/master/data_engineering_on_GCP.pdf)
+
+[Data Engineering Decision Tree](https://towardsdatascience.com/how-to-choose-the-right-google-cloud-platform-database-a223f4d7482f)
+
+[GCP Machine Learning Best Practices](https://cloud.google.com/architecture/ml-on-gcp-best-practices)
+
+[Azure Guidance](https://github.com/AdamPaternostro/Azure-Big-Data-and-Machine-Learning-Architecture/blob/master/Azure-Big-Data-Architecture.pptx)
+
+## BigQuery
+
+[BigQuery](https://cloud.google.com/vertex-ai/docs/pipelines)
+
+[BigQuery ML]( https://www.youtube.com/watch?v=AVwwkqLOito&ab_channel=GoogleCloudTech)
+
+[Feature Store](https://cloud.google.com/vertex-ai/docs/featurestore/overview)
+
+[Vertex AI + BigQuery](https://cloud.google.com/vertex-ai/docs/beginner/bqml)
+![Ref Arch](https://cloud.google.com/static/vertex-ai/docs/beginner/images/mlops_bq2.png)
+
+[Vertex AI Pipelines](https://codelabs.developers.google.com/vertex-pipelines-intro#0)
 
 ### Step 0: Before You Start 
 * GCP Account - Sign up for a free GCP account here 
@@ -17,17 +36,18 @@ In this tutorial, you will go through various ways of importing, transforming, a
 
   *  Upload .csv file into the created bucket using the Upload button
 
-### Step 2: Set up Studio
-* Navigate to AWS portal and type in AWS SageMaker 
-* Create a SageMaker Domain 
+### Step 2: Set up Vertex AI
+* Navigate to GCP portal and type in Vertex AI
+* Create a Vertex AI workbench
 
 <!-- ![p2](https://user-images.githubusercontent.com/33441411/164118649-8be00282-58d8-4edd-9c88-4b32ee6db4ea.png)
 ![p3](https://user-images.githubusercontent.com/33441411/164118664-d9344532-092b-445b-b422-b143f94b097f.png)
  -->
-### Step 3: Get Started with Data Wrangler 
+### Step 3: Get Started with BigQuery
 * Hit Launch App -> Studio 
-<!-- ![p4](https://user-images.githubusercontent.com/33441411/164119815-137ae878-cb0b-4369-add3-63069cbae506.png)
- -->
+
+[Big Query One-minute](https://cloud.google.com/bigquery/docs/introduction)
+
 * Create a Data Wrangler Flow by going to File -> New -> Data Wrangler Flow
 <!-- ![p5](https://user-images.githubusercontent.com/33441411/164119824-00eb5c9b-5176-4b6b-842e-b4cb557cbead.png)
  -->
