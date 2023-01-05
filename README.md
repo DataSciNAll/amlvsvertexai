@@ -1,28 +1,50 @@
+
 # Azure-ML-vs-GCP Vertex AI
 
 ## Overview
 In this tutorial, you will go through various ways of importing, transforming, analyzing, and exporting data with Vertex AI. This tutorial will walk you through BigQuery and Vertex AI Consoles. Here is a good cheatsheet that outlines the options for data engineering and machine learning options in GCP.
 
-[Data Engineering Cheat Sheet in GCP](https://github.com/ml874/Data-Engineering-on-GCP-Cheatsheet/blob/master/data_engineering_on_GCP.pdf)
+
+### Research Articles
 
 [Data Engineering Decision Tree](https://towardsdatascience.com/how-to-choose-the-right-google-cloud-platform-database-a223f4d7482f)
 
 [GCP Machine Learning Best Practices](https://cloud.google.com/architecture/ml-on-gcp-best-practices)
 
-[Azure Guidance](https://github.com/AdamPaternostro/Azure-Big-Data-and-Machine-Learning-Architecture/blob/master/Azure-Big-Data-Architecture.pptx)
+[Data Transfer Service to BQ](https://cloud.google.com/bigquery/docs/loading-data-cloud-storage-csv)
 
-## BigQuery
+[Big Query One-minute](https://cloud.google.com/bigquery/docs/introduction)
 
-[BigQuery](https://cloud.google.com/vertex-ai/docs/pipelines)
+[Intro to Vertex AI](https://cloud.google.com/vertex-ai/docs/beginner/beginners-guide)
 
-[BigQuery ML]( https://www.youtube.com/watch?v=AVwwkqLOito&ab_channel=GoogleCloudTech)
+[Intro to AutoML](https://cloud.google.com/vertex-ai/docs/beginner/beginners-guide)
+
+[Vertex AI + BigQuery](https://cloud.google.com/vertex-ai/docs/beginner/bqml)
+
+[BigQuery ML](https://cloud.google.com/bigquery-ml/docs/introduction)
 
 [Feature Store](https://cloud.google.com/vertex-ai/docs/featurestore/overview)
 
-[Vertex AI + BigQuery](https://cloud.google.com/vertex-ai/docs/beginner/bqml)
 ![Ref Arch](https://cloud.google.com/static/vertex-ai/docs/beginner/images/mlops_bq2.png)
 
-[Vertex AI Pipelines](https://codelabs.developers.google.com/vertex-pipelines-intro#0)
+### Data Science Lifecycle from past hacks
+1. Storage Tabular Data
+2. Feature Engineering
+3. Model training -- Respond to a offer for a Fixed Term Deposit from a banking institution (Binary Classification)
+4. AutoML -- Quick Build
+5. Feature Importance
+6. Model Evaluation
+7. Model Deployment -- Test use case
+
+### GCP Service in Scope
+1. Cloud Storage
+1. BQ Data Transfer Service
+1. BigQuery
+1. BigQuery ML -- AutoML
+1. Vertex AI -- AutoML
+1. Vertex AI -- Custom Models
+
+## BigQuery
 
 ### Step 0: Before You Start 
 * GCP Account - Sign up for a free GCP account here 
@@ -45,8 +67,6 @@ In this tutorial, you will go through various ways of importing, transforming, a
  -->
 ### Step 3: Get Started with BigQuery
 * Hit Launch App -> Studio 
-
-[Big Query One-minute](https://cloud.google.com/bigquery/docs/introduction)
 
 * Create a Data Wrangler Flow by going to File -> New -> Data Wrangler Flow
 <!-- ![p5](https://user-images.githubusercontent.com/33441411/164119824-00eb5c9b-5176-4b6b-842e-b4cb557cbead.png)
@@ -107,9 +127,11 @@ Hit preview and click Add. You should see some new columns on the right.
 
 ## Canvas 
 <!-- Tutorial - https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-getting-started.html -->
- 
- 
- 
- 
+
+
+
+
+
+
 # Acknowledgements
 This code repo has been forked from https://github.com/DataSciNAll/Azure-ML-vs-AWS-SageMaker- Special thanks to Devanshi Thakar and team for sharing their code set and workflows with us.  We hope this gives a good guide to the different features across each platform.
