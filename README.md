@@ -138,8 +138,8 @@ Hit preview and click Add. You should see some new columns on the right.
 * Create a new project (Manage Resources -> Create Project)
 * Enable the following API's Vertex API (APIs & Services -> +Enable APIs and Services -> Search)
 
- *Vertex AI API
- *Cloud Storage API
+ * Vertex AI API
+ * Cloud Storage API
 
 ### Setup the rest of the environment
 * Follow Step 5 - Step 7 -> https://cloud.google.com/vertex-ai/docs/tutorials/tabular-automl/setup 
