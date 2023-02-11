@@ -46,7 +46,7 @@ In this tutorial, you will go through various ways of importing, transforming, a
 
 
 <!-- HACK #1 -->
-## Training a classification model with Vertex AI AutoML  
+## Hack #1: Training a classification model with Vertex AI AutoML  
 
 ### Step 0: Before You Start 
 * GCP Account - Sign up for a free GCP account here
@@ -73,16 +73,19 @@ In this tutorial, you will go through various ways of importing, transforming, a
 * Model Registry -> Model -> Version -> Deploy & Test -> Deploy to endpoint
 * Test your model -> Enter values -> Predict
 
-# Acknowledgements
-This code repo has been forked from https://github.com/DataSciNAll/Azure-ML-vs-AWS-SageMaker- Special thanks to Devanshi Thakar and team for sharing their code set and workflows with us.  We hope this gives a good guide to the different features across each platform.
+
 
 
 <!-- HACK #2 -->
-## Training a classification model with Vertex AI Custom Training 
+## Hack #2: Training a classification model with Vertex AI Custom Training 
+### Step 0:
+### Step 1:
+### Step 2:
+
 
 
 <!-- DEMO -->
-## BigQuery
+## Demo: BigQuery
 
 ### Step 0: Before You Start 
 * GCP Account - Sign up for a free GCP account here 
@@ -161,3 +164,8 @@ Hit preview and click Add. You should see some new columns on the right.
 * Make sure all and any S3 buckets are deleted!
 * In the Studio: On the left, click on Running Terminals and Kernals. Next to Running Apps click on the X. This will close out all your application sessions. I also close all my notebooks.
 * Delete all Domain's open for the Studio and Canvas (Part 2)
+
+
+
+# Acknowledgements
+This code repo has been forked from https://github.com/DataSciNAll/Azure-ML-vs-AWS-SageMaker- Special thanks to Devanshi Thakar and team for sharing their code set and workflows with us.  We hope this gives a good guide to the different features across each platform.
