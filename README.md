@@ -44,6 +44,44 @@ In this tutorial, you will go through various ways of importing, transforming, a
 1. Vertex AI -- AutoML
 1. Vertex AI -- Custom Models
 
+
+<!-- HACK #1 -->
+## Training a classification model with Vertex AI AutoML  
+
+### Step 0: Before You Start 
+* GCP Account - Sign up for a free GCP account here
+
+### Step 1: Create a project and enable the Needed API's 
+* Create a new project (Manage Resources -> Create Project)
+* Enable the following API's Vertex API (APIs & Services -> +Enable APIs and Services -> Search)
+
+ * Vertex AI API
+ * Cloud Storage API
+
+### Setup the rest of the environment
+* Follow Step 5 - Step 7 -> https://cloud.google.com/vertex-ai/docs/tutorials/tabular-automl/setup 
+
+### Step 2: Upload Dataset + Analyze 
+* Navigate to Vertex AI within the GoogleCloud platform. (Click on the Navigation Menu -> Artificial Intelligence -> Vertex AI)
+* Go to Datasets -> Create -> Tabular -> Regression/Classification -> Upload CSV file from computer -> Select a Cloud Storage Path -> Create.
+* View dataset and what values may be missing.
+
+### Step 3: Training 
+* Training -> Train new model -> AutoML -> Choose Target Col -> Select Compute and pricing -> Start Training
+
+### Step 4: Deploy + Test
+* Model Registry -> Model -> Version -> Deploy & Test -> Deploy to endpoint
+* Test your model -> Enter values -> Predict
+
+# Acknowledgements
+This code repo has been forked from https://github.com/DataSciNAll/Azure-ML-vs-AWS-SageMaker- Special thanks to Devanshi Thakar and team for sharing their code set and workflows with us.  We hope this gives a good guide to the different features across each platform.
+
+
+<!-- HACK #2 -->
+## Training a classification model with Vertex AI Custom Training 
+
+
+<!-- DEMO -->
 ## BigQuery
 
 ### Step 0: Before You Start 
@@ -123,38 +161,3 @@ Hit preview and click Add. You should see some new columns on the right.
 * Make sure all and any S3 buckets are deleted!
 * In the Studio: On the left, click on Running Terminals and Kernals. Next to Running Apps click on the X. This will close out all your application sessions. I also close all my notebooks.
 * Delete all Domain's open for the Studio and Canvas (Part 2)
-
-
-## Canvas 
-<!-- Tutorial - https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-getting-started.html -->
-
-<!-- HACK #1 -->
-## AutoML 
-
-### Step 0: Before You Start 
-* GCP Account - Sign up for a free GCP account here
-
-### Step 1: Create a project and enable the Needed API's 
-* Create a new project (Manage Resources -> Create Project)
-* Enable the following API's Vertex API (APIs & Services -> +Enable APIs and Services -> Search)
-
- * Vertex AI API
- * Cloud Storage API
-
-### Setup the rest of the environment
-* Follow Step 5 - Step 7 -> https://cloud.google.com/vertex-ai/docs/tutorials/tabular-automl/setup 
-
-### Step 2: Upload Dataset + Analyze 
-* Navigate to Vertex AI within the GoogleCloud platform. (Click on the Navigation Menu -> Artificial Intelligence -> Vertex AI)
-* Go to Datasets -> Create -> Tabular -> Regression/Classification -> Upload CSV file from computer -> Select a Cloud Storage Path -> Create.
-* View dataset and what values may be missing.
-
-### Step 3: Training 
-* Training -> Train new model -> AutoML -> Choose Target Col -> Select Compute and pricing -> Start Training
-
-### Step 4: Deploy + Test
-* Model Registry -> Model -> Version -> Deploy & Test -> Deploy to endpoint
-* Test your model -> Enter values -> Predict
-
-# Acknowledgements
-This code repo has been forked from https://github.com/DataSciNAll/Azure-ML-vs-AWS-SageMaker- Special thanks to Devanshi Thakar and team for sharing their code set and workflows with us.  We hope this gives a good guide to the different features across each platform.
