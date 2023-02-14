@@ -1,0 +1,6 @@
+gcsfs==0.7.1
+dask[dataframe]==2021.2.0
+google-cloud-bigquery-storage==1.0.0
+six==1.15.0
+google-auth-oauthlib==0.5.3
+google-api-core==1.23.0
