@@ -1,29 +1,34 @@
-
 # Azure-ML-vs-GCP Vertex AI
 
 ## Overview
+---
 In this tutorial, you will go through various ways of importing, transforming, analyzing, and exporting data with Vertex AI. This tutorial will walk you through BigQuery and Vertex AI Consoles. Here is a good cheatsheet that outlines the options for data engineering and machine learning options in GCP.
 
+This Compete collection includes the following:
+- AutoML tutorial
+- Custom model training and deployment tutorial
+- BigQuery feature engineering
 
-### Research Articles
 
-[Data Engineering Decision Tree](https://towardsdatascience.com/how-to-choose-the-right-google-cloud-platform-database-a223f4d7482f)
+### Background information (optional)
 
-[GCP Machine Learning Best Practices](https://cloud.google.com/architecture/ml-on-gcp-best-practices)
+- [Data Engineering Decision Tree](https://towardsdatascience.com/how-to-choose-the-right-google-cloud-platform-database-a223f4d7482f)
 
-[Data Transfer Service to BQ](https://cloud.google.com/bigquery/docs/loading-data-cloud-storage-csv)
+- [GCP Machine Learning Best Practices](https://cloud.google.com/architecture/ml-on-gcp-best-practices)
 
-[Big Query One-minute](https://cloud.google.com/bigquery/docs/introduction)
+- [Data Transfer Service to BQ](https://cloud.google.com/bigquery/docs/loading-data-cloud-storage-csv)
 
-[Intro to Vertex AI](https://cloud.google.com/vertex-ai/docs/beginner/beginners-guide)
+- [Big Query One-minute](https://cloud.google.com/bigquery/docs/introduction)
 
-[Intro to AutoML](https://cloud.google.com/vertex-ai/docs/beginner/beginners-guide)
+- [Intro to Vertex AI](https://cloud.google.com/vertex-ai/docs/beginner/beginners-guide)
 
-[Vertex AI + BigQuery](https://cloud.google.com/vertex-ai/docs/beginner/bqml)
+- [Intro to AutoML](https://cloud.google.com/vertex-ai/docs/beginner/beginners-guide)
 
-[BigQuery ML](https://cloud.google.com/bigquery-ml/docs/introduction)
+- [Vertex AI + BigQuery](https://cloud.google.com/vertex-ai/docs/beginner/bqml)
 
-[Feature Store](https://cloud.google.com/vertex-ai/docs/featurestore/overview)
+- [BigQuery ML](https://cloud.google.com/bigquery-ml/docs/introduction)
+
+- [Feature Store](https://cloud.google.com/vertex-ai/docs/featurestore/overview)
 
 ![Ref Arch](https://cloud.google.com/static/vertex-ai/docs/beginner/images/mlops_bq2.png)
 
@@ -36,17 +41,15 @@ In this tutorial, you will go through various ways of importing, transforming, a
 6. Model Evaluation
 7. Model Deployment -- Test use case
 
-### GCP Service in Scope
+### GCP Services in this hack collection
 1. Cloud Storage
-1. BQ Data Transfer Service
 1. BigQuery
-1. BigQuery ML -- AutoML
-1. Vertex AI -- AutoML
-1. Vertex AI -- Custom Models
-
+1. Vertex AI
+1. Container Registry
 
 <!-- HACK #1 -->
-## Hack #1: Training a classification model with Vertex AI AutoML  
+## Hack #1: Training a classification model with Vertex AI AutoML
+---
 
 ### Step 0: Before You Start 
 * GCP Account - Sign up for a free GCP account here
@@ -77,15 +80,36 @@ In this tutorial, you will go through various ways of importing, transforming, a
 
 
 <!-- HACK #2 -->
-## Hack #2: Training a classification model with Vertex AI Custom Training 
-### Step 0:
-### Step 1:
-### Step 2:
+## Hack #2: Training a classification model with Vertex AI Custom Training
+---
+This tutorial borrows from [Vertex AI: Custom training job and prediction using managed datasets](https://codelabs.developers.google.com/codelabs/vertex-ai-custom-code-training#0) with some changes made.
+
+We recommend following the steps in that tutorial and referencing the notes listed here for the respective steps.
+
+Following this tutorial will cost less than $5 to run, provided that you delete resources afterwards.
+
+**Step 1**: Same as tutorial.
+
+**Step 2**: 
+- Download `titanic.csv` in this repository and follow ===THESE STEPS=== to upload into a Google Cloud Storage Bucket.
+ - Create a folder, `model` nested under `artifacts` in the Terminal: `mkdir titanic/trainer/artifacts/model`.
+ 
+**Step 3**: Same as tutorial.
+
+**Step 4**: 
+- Copy and paste the code provided in this repository under `custom-model/trainer/task.py` and paste into your respective task.py file.
+
+**Step 5**:
+- Copy and paste these arguments into the UI, replacing the text with your respective arguments.
+- Training should take about 5-7 minutes.
+
+**Steps 6-9**: Same as tutorial.
 
 
 
 <!-- DEMO -->
 ## Demo: BigQuery
+---
 
 ### Step 0: Before You Start 
 * GCP Account - Sign up for a free GCP account here 
@@ -167,5 +191,6 @@ Hit preview and click Add. You should see some new columns on the right.
 
 
 
-# Acknowledgements
-This code repo has been forked from https://github.com/DataSciNAll/Azure-ML-vs-AWS-SageMaker- Special thanks to Devanshi Thakar and team for sharing their code set and workflows with us.  We hope this gives a good guide to the different features across each platform.
+## Related Compete Hacks
+---
+[Azure ML vs AWS Sagemaker](https://github.com/DataSciNAll/Azure-ML-vs-AWS-SageMaker-)

@@ -123,10 +123,7 @@ def data_selection(df: pd.DataFrame, selected_columns: List[str], label_column: 
     '''
     # We create a series with the prediciton label
     labels = df[label_column]
-    
     data = df.loc[:, selected_columns]
-    
-
     return data, labels
 
 def pipeline_builder(params_svm: dict, bin_ftr_idx: List[int], num_ftr_idx: List[int], cat_ftr_idx: List[int]) -> Pipeline:
