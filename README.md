@@ -88,7 +88,7 @@ We recommend following the steps in that tutorial and referencing the notes list
 
 Following this tutorial will cost less than $5 to run, provided that you delete resources afterwards.
 
-**Step 1**: Same as tutorial.
+**Step 1**: Create a user-managed notebook. The region does not matter.
 
 **Step 2**: 
 - Download `titanic.csv` in this repository and follow ===THESE STEPS=== to upload into a Google Cloud Storage Bucket.
