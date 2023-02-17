@@ -2,50 +2,12 @@
 
 ## Overview
 ---
-In this tutorial, you will go through various ways of importing, transforming, analyzing, and exporting data with Vertex AI. This tutorial will walk you through BigQuery and Vertex AI Consoles. Here is a good cheatsheet that outlines the options for data engineering and machine learning options in GCP.
+In this tutorial, you will go through various ways of importing, transforming, analyzing, and exporting data with Vertex AI. This tutorial will walk you through the Vertex AI Console. 
 
 This Compete collection includes the following:
 - AutoML tutorial
 - Custom model training and deployment tutorial
-- BigQuery feature engineering
 
-
-### Background information (optional)
-
-- [Data Engineering Decision Tree](https://towardsdatascience.com/how-to-choose-the-right-google-cloud-platform-database-a223f4d7482f)
-
-- [GCP Machine Learning Best Practices](https://cloud.google.com/architecture/ml-on-gcp-best-practices)
-
-- [Data Transfer Service to BQ](https://cloud.google.com/bigquery/docs/loading-data-cloud-storage-csv)
-
-- [Big Query One-minute](https://cloud.google.com/bigquery/docs/introduction)
-
-- [Intro to Vertex AI](https://cloud.google.com/vertex-ai/docs/beginner/beginners-guide)
-
-- [Intro to AutoML](https://cloud.google.com/vertex-ai/docs/beginner/beginners-guide)
-
-- [Vertex AI + BigQuery](https://cloud.google.com/vertex-ai/docs/beginner/bqml)
-
-- [BigQuery ML](https://cloud.google.com/bigquery-ml/docs/introduction)
-
-- [Feature Store](https://cloud.google.com/vertex-ai/docs/featurestore/overview)
-
-![Ref Arch](https://cloud.google.com/static/vertex-ai/docs/beginner/images/mlops_bq2.png)
-
-### Data Science Lifecycle from past hacks
-1. Storage Tabular Data
-2. Feature Engineering
-3. Model training -- Respond to a offer for a Fixed Term Deposit from a banking institution (Binary Classification)
-4. AutoML -- Quick Build
-5. Feature Importance
-6. Model Evaluation
-7. Model Deployment -- Test use case
-
-### GCP Services in this hack collection
-1. Cloud Storage
-1. BigQuery
-1. Vertex AI
-1. Container Registry
 
 <!-- HACK #1 -->
 ## Hack #1: Training a classification model with Vertex AI AutoML
@@ -109,3 +71,26 @@ Following this tutorial will cost less than $5 to run, provided that you delete 
 ## Related Compete Hacks
 ---
 [Azure ML vs AWS Sagemaker](https://github.com/DataSciNAll/Azure-ML-vs-AWS-SageMaker-)
+
+
+### Resources
+
+- [Data Engineering Decision Tree](https://towardsdatascience.com/how-to-choose-the-right-google-cloud-platform-database-a223f4d7482f)
+
+- [GCP Machine Learning Best Practices](https://cloud.google.com/architecture/ml-on-gcp-best-practices)
+
+- [Data Transfer Service to BQ](https://cloud.google.com/bigquery/docs/loading-data-cloud-storage-csv)
+
+- [Big Query One-minute](https://cloud.google.com/bigquery/docs/introduction)
+
+- [Intro to Vertex AI](https://cloud.google.com/vertex-ai/docs/beginner/beginners-guide)
+
+- [Intro to AutoML](https://cloud.google.com/vertex-ai/docs/beginner/beginners-guide)
+
+- [Vertex AI + BigQuery](https://cloud.google.com/vertex-ai/docs/beginner/bqml)
+
+- [BigQuery ML](https://cloud.google.com/bigquery-ml/docs/introduction)
+
+- [Feature Store](https://cloud.google.com/vertex-ai/docs/featurestore/overview)
+
+![Ref Arch](https://cloud.google.com/static/vertex-ai/docs/beginner/images/mlops_bq2.png)
