@@ -56,11 +56,12 @@ Following this tutorial will cost less than $5 to run, provided that you delete 
 - The tutorial's written instructions can be skipped since we will be uploading data into Google Cloud Storage instead of BigQuery.
 - Instead do the following:
   - Download `titanic.csv` in this repository and [upload into a Google Cloud Storage Bucket](https://cloud.google.com/storage/docs/uploading-objects#:~:text=Uploading%20Files%20to%20Google%20Cloud%201%20Open%20the,you%20are%20using%20the%20Chrome%20...%20See%20More.).
-  - Create a folder, `model` nested under `artifacts` in the Notebook's Terminal:
-
-      ```
-      mkdir titanic/trainer/artifacts/model
-      ```
+  - Create a folder structure in your Bucket to hold your data and artifacts to look like the following:
+    - your-bucket/
+      - titanic/
+        - titanic.csv
+        - artifacts/
+          - model/
 
 **Step 3: Create a dataset**
 - Select datasource: Choose `Select CSV files from Cloud Storage`.
@@ -68,7 +69,8 @@ Following this tutorial will cost less than $5 to run, provided that you delete 
 
 **Step 4: Custom training package using Notebooks**
 - Create a **user-managed notebook** in Vertex AI Workbench. The region does not matter.
-- Copy the code provided in this repository under `custom-model/trainer/task.py`
+- Create a new Python file in your new Notebook.
+- Copy the code provided in this repository (located under `custom-model/trainer/task.py`)
 - Paste code into your `task.py` file in your Notebook environment.
 - Test the program locally before building your package. Here is an example of user input. Replace the `model_dir`, `training_data_uri`, and `test_data_uri` arguments with your own paths.
 
